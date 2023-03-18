@@ -1,0 +1,10 @@
+@import-normalize
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  background-color: black;
+  font-size: 18px;
+}
