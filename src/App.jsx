@@ -1,6 +1,6 @@
 
 import './index.css'
-import { Transition } from './components'
+import { Transition, Enter, Exit, Keyframes } from './components'
 import { FramerMenu } from './constants' 
 import { useState } from 'react';
 
@@ -9,7 +9,22 @@ function App() {
 
   const handleContentLoading = (e) => {    
     e.preventDefault()    
-    setTemplate(`<${e.target.name}/>`)    
+    switch (e.target.name) {
+      case 'Transition':
+        setTemplate(<Transition />)
+        break;
+      case 'Enter':
+        setTemplate(<Enter />)
+        break; 
+      case 'Exit':
+        setTemplate(<Exit />)
+        break;  
+      case 'Keyframes':
+        setTemplate(<Keyframes />)
+        break;   
+      default:
+        break;
+    }
   }
 
   return (

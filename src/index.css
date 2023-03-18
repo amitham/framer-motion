@@ -8,3 +8,10 @@
   background-color: black;
   font-size: 18px;
 }
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: var(--accent);
+  background-color: white;
+}
